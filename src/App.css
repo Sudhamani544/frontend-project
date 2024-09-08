@@ -1,0 +1,92 @@
+body {
+  background-color: white;
+  color: black;
+}
+
+import .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ffadad;
+  padding: 10px;
+}
+
+.themeSelect {
+  display: Flex;
+  flex-direction: column;
+}
+
+.sticky {
+  position: sticky;
+  top: 0px;
+}
+
+.favIcon:hover {
+  cursor: pointer;
+}
+
+.favPage {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  padding: 5px;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.btnFavPage {
+  background-color: blue;
+  color: white;
+  border-radius: 10px;
+}
+
+.themeDark {
+  background-color: #082032;
+}
+
+.themeLight {
+  background-color: white;
+}
+
+.countryPage {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("./media/country.jpg");
+  height: 100vh;
+}
+
+.padSearchDrawer {
+  padding: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .mobile {
+    visibility: hidden;
+  }
+}
